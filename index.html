@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>knockout study</title>
+    <script type="application/javascript"  src="lib/knockout-3.1.0.js"></script>
+
+</head>
+<body>
+
+    <H3>
+        The name is <span data-bind="text: personName"></span>
+    </H3>
+
+
+    <script type="application/javascript">
+        function  myViewModel() {
+            this.personName = 'Bob',
+            this.personAge = 123
+        };
+        ko.applyBindings(new myViewModel());
+    </script>
+</body>
+</html>
